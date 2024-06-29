@@ -459,6 +459,7 @@ main {
         justify-content: start;
         align-items: center;
         flex-direction: column;
+        overflow-x: hidden;
         overflow-y: scroll;
         white-space: normal;
         padding: 20px;
