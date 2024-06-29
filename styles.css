@@ -1,0 +1,528 @@
+:root {
+    --main-bg-color: #d7f2e0;
+    --light-bg-color: #fcfffe;
+    --dark-stripe-color: #c7ebd3;
+    --light-stripe-color: #fcfffe;
+    --text-color: #306241;
+}
+
+* {
+    padding: 0;
+    border: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: "DM Serif Text", "Times New Roman", Times, serif;
+}
+
+main {
+    width: 100%;
+    max-width: 1900px;
+    margin: 0 auto;
+}
+
+#hero {
+    background-color: var(--main-bg-color);
+    width: 100%;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+}
+
+#dark-stripe {
+    position: absolute;
+    left: 50%;
+    width: 400px;
+    height: 2000px;
+    background: var(--dark-stripe-color);
+    transform: rotate(50deg) translateX(-100px);
+    z-index: 1;
+}
+
+#light-stripe-1 {
+    position: absolute;
+    left: 20%;
+    width: 400px;
+    height: 2000px;
+    background: var(--light-bg-color);
+    opacity: 20%;
+    transform: rotate(-40deg) translateX(-100px);
+    z-index: 1;
+}
+
+#light-stripe-2 {
+    position: absolute;
+    left: 70%;
+    width: 400px;
+    height: 2000px;
+    background: var(--light-bg-color);
+    opacity: 20%;
+    transform: rotate(-40deg) translateX(-100px);
+    z-index: 1;
+}
+
+#hero h1 {
+    font-size: 6rem;
+    color: var(--text-color);
+    z-index: 2;
+}
+
+#hero p {
+    font-size: 2rem;
+    color: var(--text-color);
+    z-index: 2;
+}
+
+#hero nav {
+    width: 600px;
+    padding: 170px 0 100px 0;
+    display: flex;
+    justify-content: space-between;
+    z-index: 2;
+}
+
+#hero nav button {
+    width: 160px;
+    padding: 14px 0px;
+    border-radius: 10px;
+    background: #5c6f6d;
+    color: white;
+    font-family: "DM Sans", Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+    transition: transform 0.3s ease;
+}
+
+#hero nav button:hover {
+    cursor: pointer;
+    background-color: #3e5553;
+    transform: rotate(-3deg);
+}
+
+#about {
+    background-color: var(--light-bg-color);
+    width: 100%;
+    padding: 80px;
+    display: flex;
+    justify-content: end;
+    color: var(--text-color);
+}
+
+#about div {
+    flex: 1;
+}
+
+#about div h2 {
+    font-size: 3rem;
+    padding-bottom: 10px;
+}
+
+#about div p {
+    font-size: 1.5rem;
+}
+
+#about > p {
+    font-size: 14rem;
+    padding: 0 50px;
+    vertical-align: center;
+}
+
+#projects {
+    background-color: var(--main-bg-color);
+    width: 100%;
+    padding: 80px;
+    color: var(--text-color);
+}
+
+#projects h2 {
+    font-size: 3rem;
+    padding-bottom: 10px;
+}
+
+#projects nav {
+    width: 100%;
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 20px;
+}
+
+#projects nav div {
+    width: 350px;
+    height: 200px;
+    margin-right: 20px;
+    background: white;
+    flex: 0 0 auto;
+    border-radius: 20px;
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.2));
+}
+
+#contact {
+    background-color: var(--light-bg-color);
+    width: 100%;
+    padding: 80px;
+    color: var(--text-color);
+}
+
+#contact h2 {
+    font-size: 3rem;
+    padding-bottom: 10px;
+}
+
+#contact-cont {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+#contact-cont img {
+    width: 200px;
+    height: 200px;
+    border-radius: 80px;
+    object-fit: cover;
+    transform: rotate(10deg);
+    margin-bottom: 30px;
+}
+
+#contact-cont > div {
+    padding: 20px 0px;
+    display: flex;
+    justify-center: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#contact-cont > div p {
+    font-family: "Meow Script", "Snell Roundhand", cursive;
+    font-size: 5rem;
+}
+
+#contact-cont > div a {
+    font-family: "DM Sans", Arial, Helvetica, sans-serif;
+    color: var(--text-color);
+    text-decoration: underline;
+    cursor: pointer;
+    font-size: 1.3rem;
+    padding-top: 10px;
+}
+
+#contact-cont > form {
+    width: 600px;
+    height: 500px;
+    background: white;
+    border-radius: 20px;
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.2));
+    padding: 40px;
+    font-family: "DM Sans", Arial, Helvetica, sans-serif;
+}
+
+#contact-cont > form input,
+#contact-cont > form textarea {
+    border: solid 1.5px #939393;
+    background: #f4f4f4;
+    font-size: 1.4rem;
+    padding: 10px 20px;
+    font-family: "DM Sans", Arial, Helvetica, sans-serif;
+    border-radius: 10px;
+}
+
+#contact-cont > form div {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#contact-cont > form textarea {
+    height: 200px;
+    overflow: scroll;
+    resize: none;
+}
+
+#contact-fname {
+    margin-right: 5px;
+}
+
+#contact-lname,
+#contact-fname {
+    width: 250px;
+}
+
+#contact-email {
+    width: 100%;
+    display: block;
+    margin-top: 20px;
+}
+
+#contact-message {
+    width: 100%;
+    display: block;
+    margin-top: 20px;
+}
+
+#contact-cont > form button {
+    width: 120px;
+    padding: 14px 0px;
+    margin-top: 20px;
+    border-radius: 10px;
+    background: #5c6f6d;
+    color: white;
+    font-family: "DM Sans", Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+    transition: transform 0.3s ease;
+}
+
+#contact-cont > form button:hover {
+    cursor: pointer;
+    background-color: #3e5553;
+    transform: rotate(-3deg);
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+@media (max-width: 1260px) {
+    #about div p {
+        font-size: 1.3rem;
+    }
+
+    #contact-cont > div {
+        justify-content: center;
+    }
+
+    #contact-cont > div img {
+        width: 150px;
+        height: 150px;
+        border-radius: 60px;
+    }
+
+    #contact-cont > div p {
+        font-family: "Meow Script", "Snell Roundhand", cursive;
+        font-size: 3rem;
+    }
+
+    #contact-cont > form {
+        width: 500px;
+        height: 480px;
+        background: white;
+        border-radius: 20px;
+        filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.2));
+        padding: 40px;
+        font-family: "DM Sans", Arial, Helvetica, sans-serif;
+    }
+
+    #contact-cont > form input,
+    #contact-cont > form textarea {
+        border: solid 1.5px #939393;
+        background: #f4f4f4;
+        font-size: 1.2rem;
+        padding: 10px 15px;
+        font-family: "DM Sans", Arial, Helvetica, sans-serif;
+        border-radius: 10px;
+    }
+
+    #contact-lname,
+    #contact-fname {
+        width: 200px;
+    }
+}
+
+@media (max-width: 1024px) {
+    #hero h1 {
+        font-size: 4rem;
+        color: var(--text-color);
+        z-index: 2;
+    }
+
+    #hero p {
+        font-size: 1.8rem;
+        color: var(--text-color);
+        z-index: 2;
+    }
+
+    #hero nav {
+        width: auto;
+        padding: 50px 0 50px 0;
+        display: flex;
+        justify-content: start;
+        flex-direction: column;
+        z-index: 2;
+    }
+
+    #hero nav button {
+        width: 70vw;
+        padding: 14px 0px;
+        margin: 10px;
+        border-radius: 10px;
+        background: #5c6f6d;
+        color: white;
+        font-family: "DM Sans", Arial, Helvetica, sans-serif;
+        font-size: 1.2rem;
+        font-weight: 600;
+    }
+
+    #about {
+        padding: 40px;
+    }
+
+    #about > p {
+        display: none;
+    }
+
+    #projects {
+        padding: 40px;
+    }
+
+    #contact {
+        padding: 40px;
+    }
+
+    #contact-cont {
+        width: 100%;
+        display: flex;
+        justify-content: start;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    #contact-cont > div {
+        margin-bottom: 50px;
+    }
+}
+
+@media (max-width: 610px) {
+    #hero h1 {
+        font-size: 3rem;
+        color: var(--text-color);
+        z-index: 2;
+    }
+
+    #hero p {
+        font-size: 1.3rem;
+        color: var(--text-color);
+        z-index: 2;
+    }
+
+    #hero nav {
+        width: auto;
+        padding: 100px 0 0px 0;
+        display: flex;
+        justify-content: space-between;
+        z-index: 2;
+    }
+
+    #hero nav button {
+        background-color: #306241;
+        padding: 15px 0px;
+        font-family: "DM Sans", Arial, Helvetica, sans-serif;
+        font-size: 1.1rem;
+        font-weight: 600;
+    }
+
+    #about div h2 {
+        font-size: 2rem;
+        padding-bottom: 10px;
+    }
+
+    #about div p {
+        font-size: 1.1rem;
+        font-family: "DM Sans", Arial, Helvetica, sans-serif;
+        font-weight: 500;
+    }
+
+    #projects h2 {
+        font-size: 2rem;
+        padding-bottom: 10px;
+    }
+
+    #projects nav {
+        width: 100%;
+        height: 300px;
+        padding-top: 20px;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        flex-direction: column;
+        overflow-y: scroll;
+        white-space: normal;
+        padding: 20px;
+    }
+
+    #projects nav div {
+        width: 260px;
+        height: 150px;
+        margin-bottom: 20px;
+        background: white;
+        flex: auto 0 0;
+        border-radius: 20px;
+        filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.2));
+    }
+
+    #contact h2 {
+        font-size: 2rem;
+        padding-bottom: 10px;
+    }
+
+    #contact-cont > div a {
+        font-size: 1.1rem;
+    }
+
+    #contact-cont > form {
+        width: 300px;
+        height: auto;
+        background: white;
+        border-radius: 20px;
+        filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.2));
+        padding: 40px;
+        font-family: "DM Sans", Arial, Helvetica, sans-serif;
+    }
+
+    #contact-cont > form input,
+    #contact-cont > form textarea {
+        border: solid 1.5px #939393;
+        background: #f4f4f4;
+        font-size: 1.1rem;
+        padding: 8px 10px;
+        font-family: "DM Sans", Arial, Helvetica, sans-serif;
+        border-radius: 10px;
+    }
+
+    #contact-cont > form div {
+        width: 100%;
+        display: block;
+    }
+
+    #contact-lname {
+        margin-top: 20px;
+    }
+
+    #contact-lname,
+    #contact-fname {
+        width: 100%;
+    }
+
+    #contact-cont > form button {
+        width: 100%;
+        padding: 15px 0px;
+        margin-top: 20px;
+        border-radius: 10px;
+        font-size: 1.1rem;
+        font-weight: 600;
+    }
+}
