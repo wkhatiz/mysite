@@ -252,6 +252,7 @@ main {
     padding: 10px 20px;
     font-family: "DM Sans", Arial, Helvetica, sans-serif;
     border-radius: 10px;
+    color: var(--text-color);
 }
 
 #contact-cont > form div {
